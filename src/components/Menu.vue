@@ -3,16 +3,8 @@
     <div class="container">
         <img src="..\assets\vue-dc-comics-1\img\dc-logo.png" alt="">
         <ul>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
-            <li><a href="#"> Prova</a></li>
+            <li v-for="(link,index) in links" :key="index"><a href="#"> {{link.text}}</a></li>
+          
           
         </ul>
     </div>
@@ -20,8 +12,14 @@
 </template>
 
 <script>
+import * as links from '../data/data.js';
 export default {
   name: 'Menu',
+  data() {
+    return {
+      links: links.headerLinks
+    }
+  }
 
 }
 </script>
@@ -37,6 +35,9 @@ export default {
          width: 50%;
         display: flex;
         justify-content: space-between;
+        li :hover{
+            color: red;
+        }
 
     }
 </style>

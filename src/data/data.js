@@ -50,3 +50,4 @@ const headerLinks = [
         current: false,
     },
 ]
+export { headerLinks }
