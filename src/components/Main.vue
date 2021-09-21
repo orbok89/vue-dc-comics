@@ -1,10 +1,7 @@
 <template>
   <div >
     <div class="container">
-        <div class="nero">
-           <div> Il contenuto va qua</div>
-
-        </div>
+      
         <div class="blu">
             <div>
                 <img class="resize"  src="..\assets\vue-dc-comics-1\img\buy-comics-digital-comics.png" alt="">
@@ -32,7 +29,7 @@
   </div>
 </template>
 
-<script>
+<script scoped lang="scss">
 export default {
   name: 'Main',
 
@@ -41,8 +38,8 @@ export default {
 <style scoped lang="scss">
 .container{
     width: 100%;
-    height: 300px;
-    background-color: black;
+    height: 150;
+   
 }
 .nero{
     display: flex;
@@ -62,7 +59,7 @@ export default {
     align-items: center;
 }
 .resize{
-    width: 30px;
+     
 }
    
 </style>

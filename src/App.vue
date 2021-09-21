@@ -2,8 +2,9 @@
   <div id="app">
     <Menu/>
     <Jumbo/>
-   <Main/>
-   <Footer/>
+    <Fumetti/>
+    <Main/>
+    <Footer/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Menu from './components/Menu.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 import Jumbo from './components/Jumbo.vue'
+import Fumetti from './components/Fumetti.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     Menu,
     Main,
     Footer,
-    Jumbo
+    Jumbo,
+    Fumetti
   }
 }
 </script>

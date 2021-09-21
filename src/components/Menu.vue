@@ -35,9 +35,13 @@ export default {
          width: 50%;
         display: flex;
         justify-content: space-between;
+           list-style-type: none;
         li :hover{
             color: red;
+            border-bottom: 2px solid blue;
         }
-
-    }
+      }
+      a{
+        text-decoration: none;
+      }
 </style>
